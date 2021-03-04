@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#111255" />
+<title>Find The Mochis</title>
+<link rel="icon" href="https://lh3.googleusercontent.com/mGvyveuXz13fAOxTIMNMElqRun3d8hvVLZc1-dzu4hiVRI5Qsqua5OHhMJ1HVaCVhJ-4eccQpr6ck5fGJfzPQ-q8" type="image/x-icon">
+<meta property="og:image" content="https://lh3.googleusercontent.com/Hrcyyk7pkUwoH3-caWNzQNZqTIPMqVPYam1nBwk8I-PKAkFufT6zSTpv4t2F-oIVvYUbyBq7RTTQecY15MeujXmpzy7Extre6pc" />
+<meta name="description" content="Find The Mochis...">
+<meta name="keywords" content="Find the Mochis">
+<meta property="og:title" content="Find The Mochis" />
+<meta property="og:description" content="Find The Mochis..." />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Find The Mochis">
+<meta name="twitter:description" content="Find The Mochis...">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/Hrcyyk7pkUwoH3-caWNzQNZqTIPMqVPYam1nBwk8I-PKAkFufT6zSTpv4t2F-oIVvYUbyBq7RTTQecY15MeujXmpzy7Extre6pc">            <link href="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/materialize.min.css?alt=media&amp;token=af6ee253-158d-4c69-b094-56475df0cd67" rel="stylesheet" >
+            <link href="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/navcss%2Fv1%2Fnav.css?alt=media&amp;token=95b6c92c-85e6-4123-8582-b9296684e925" rel="stylesheet" >
+            <link href="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/main-10072020.css?alt=media&amp;token=30212f3d-d792-4bfa-bbf6-0d3fdf4f80e4" rel="stylesheet" >
+                            <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/core-script.min.js?alt=media&amp;token=ce263e3c-4486-4578-aa95-77fb06a90ce7"></script>
+                                <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/api-utils.min.js?alt=media&amp;token=806d7a27-8acd-4b1e-9197-0badff1f2f53"></script>
+                                <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/nav.js?alt=media&amp;token=5f2c9e9b-5430-464b-a640-7757929e0459" defer></script>
+                                <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/siema.min.js?alt=media&amp;token=f6e88929-5ed2-47aa-bcfb-db69ad85d77a" async id="siemajs"></script>
+                                <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/analytics.min.js?alt=media&amp;token=87a9ddb6-1c38-4613-96c5-709ef1bf56e4" async ></script>
+                                <script src="https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/lozad.min.js?alt=media&amp;token=114519e6-4417-47fb-a10f-3615e3f55426"></script>
+                                <script src="https://www.googletagmanager.com/gtag/js?id=UA-144590762-1" async ></script>
+                                <script src="/static-resources/js/tracking.js?v=1.2"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+                <style>
+                        :root { --color-theme-solid-color: #db00d5; --color-theme-light-color: #ff99fd;}#main-cta-btn { background-color: #db00d5; } .theme-btn { color: #ffffff; background-color: #db00d5 !important; fill: #ffffff;} .flat-theme-btn { border: 2px solid #ff99fd; color: #db00d5 !important;}.flat-theme-btn:hover { border: 2px solid #db00d5; } .theme-text-color { color: #db00d5 !important; } .bg-dark-theme-color { background-color: #db00d5;} .bg-light-theme-color { background-color: #ff99fd;} .theme-bg-with-text { background-color: #db00d5; color: #ffffff; } .solid-svg { fill: #ff99fd; !important} .dark-solid-svg { fill: #db00d5; !important} .btn:hover, .btn-large:hover, .btn-small:hover { background-color: #db00d5;} mark { background-color: #ff99fd; color: #333333} .no-shadow { -webkit-box-shadow: none; box-shadow: none;}.btn, .btn-large { border-radius: 8px; }.rounded-corners { border-radius: 8px !important;}.chip:focus { background-color: #db00d5; }.flex-container { display:flex;flex-wrap:wrap; }.flex-container > * { margin: 0px !important; }.btn:hover, .btn-large:hover, .btn-small:hover, .btn-floating:hover {-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;} .stylish-font {font-family: "CircularStd", "Helvetica", "Arial", sans-serif; font-weight: 800;} body { font-family: "CircularStd", "Helvetica", "Arial", sans-serif;}select { font-family: "CircularStd", "Helvetica", "Arial", sans-serif;}                    @font-face {   font-family: 'CircularStd';   src: url('https://firebasestorage.googleapis.com/v0/b/baya-77888.appspot.com/o/fonts%2Fdmsans%2FDMSans-Regular.ttf?alt=media&token=9c8b915e-0227-4fdf-b31e-955b3a300444') format('truetype');   font-weight: 400;   font-style: normal;   font-display: swap; }                    .nav-logo-container .big-logo {     height: 40px;     width: 40px;     top: 8px; }  #sub-nav {   transition: top 0.3s;   -webkit-transition: top 0.3s;   -moz-transition: top 0.3s;   -ms-transition: top 0.3s;   -o-transition: top 0.3s;   background: transparent;   -webkit-box-shadow: none;   box-shadow: none; }  .nav-logo-container {     display: none !important; }  @media (min-width: 992px) {     .nav-logo-container .big-logo {         height: 50px;         width: 50px;         top: 7px;     } }                    .card img.image-thumb {     border-radius: 8px; }                            
+        .no-shadow-nav .sidenav-trigger, .no-shadow-nav .top-nav li a {
+            color: #ffffff;
+        }
+
+        @media (min-width: 992px) {
+            .no-shadow-nav .sidenav-trigger, .no-shadow-nav .top-nav li a {
+                color: #ffffff;
+            }
+        }
+        </style>
+</head>
+<body>
+    <ul class="sidenav collapsible" id="mobile-demo">
+            <li><a class="normal-side-nav-item" href="#hello" onclick="sideNavClick('hello')">Main</a></li>
+                <li><a class="normal-side-nav-item" href="#updates" onclick="sideNavClick('updates')">Updates</a></li>
+                <li><a class="normal-side-nav-item" href="#about" onclick="sideNavClick('about')">Mochi Game</a></li>
+                <li><a class="normal-side-nav-item" href="#whyus" onclick="sideNavClick('whyus')">Start!</a></li>
+        </ul>
+<div class="nav-overlay" onclick="closeNav();" id="nav-overlay"></div>
+<style>
+    #mobile-demo {
+        transition: 0.3s;
+    }
+    .nav-overlay {
+        z-index: 998;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.4);
+        display: none;
+    }
+
+    .side-nav-opened {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    .side-nav-opened + .nav-overlay {
+        display: block;
+    }
+
+    .collapsible-body {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+    }
+</style>
+<script>
+    function sideNavClick(key) {
+        closeNav();
+        trackingSideNavClick(businessId, 'PAGE_HOME', key);
+    }
+
+    function closeNav() {
+        document.getElementById("mobile-demo").classList.remove('side-nav-opened');
+        document.body.style.overflow = "scroll";
+    }
+
+    var coll = document.getElementsByClassName("collapsible-header");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+</script>
+    <script>
+        const siemaLoadedFunctions = [];
+    </script>
+    <div class="content-container">
+                    <nav class="subtle-shadow no-shadow-nav" id="sub-nav" data-scrollthreshold="68">
+    <div class="nav-wrapper">
+        <a data-target="mobile-demo" class="sidenav-trigger" onclick="showSideNav();">☰</a>
+                        <div class="nav-logo-container">
+            <div class="circle subtle-shadow move-left-50 big-logo-bg"></div>
+            <div class="move-left-50 big-logo-bg-overlay"></div>
+            <div class="big-logo circle move-left-50 lozad" data-background-image="https://lh3.googleusercontent.com/r0oU_CDz9_2oKyrzsQtadEBDJD8Tw_dwDuDf3t5gLro-ky5tdQONk-L3mvdQF95GHgB8FBj3ERvolYJRIsltuw=s100"></div>
+        </div>
+                            </div>
+</nav>
+<style>
+#sub-nav .sidenav-trigger {
+    cursor: pointer;
+    display: block;
+}
+</style>
+<script>
+    function showSideNav() {
+        document.getElementById("mobile-demo").classList.add('side-nav-opened');
+        document.body.style.overflow = "hidden";
+    }
+</script>
+
+<div class="jumbo row" id="hello">
+                        <img class="hero-image lozad jumbo-semitransparent valign-wrapper col s12 hide-on-med-and-up show-on-small bg-img" data-src="https://lh3.googleusercontent.com/Hrcyyk7pkUwoH3-caWNzQNZqTIPMqVPYam1nBwk8I-PKAkFufT6zSTpv4t2F-oIVvYUbyBq7RTTQecY15MeujXmpzy7Extre6pc=s600"/>
+            <img class="hero-image lozad jumbo-semitransparent valign-wrapper col s12 hide-on-small-only bg-img" data-src="https://lh3.googleusercontent.com/8ubirpPnrXXNrjtY4UNjYRKGpybiEhIif3gx6hRXk1956voPAUzriMBiP4YNjfbXUqJTlQ9mrz0hD_KhbOot2QY=s1200"/>
+            
+    <div class="jumbo-semitransparent valign-wrapper col s12 hero-container" style="background-color: transparent;padding:0px;min-height: 0vh !important;">
+        <div class="card center-align move-left-50 hero-content-card subtle-shadow">
+                        <div>
+
+                                <div class="big-logo circle move-left-50" style="background-color:#fff; margin-top: -75px;"></div>
+                <div class="big-logo circle move-left-50 hide-on-small-only" style="margin-top: -150px;padding: 10px;"><img style="object-fit:cover;width:130px;height:130px;background:#aaa;" class="circle lozad" data-src="https://lh3.googleusercontent.com/r0oU_CDz9_2oKyrzsQtadEBDJD8Tw_dwDuDf3t5gLro-ky5tdQONk-L3mvdQF95GHgB8FBj3ERvolYJRIsltuw=s500"/></div>
+                <div class="big-logo circle move-left-50 hide-on-med-and-up show-on-small" style="margin-top: -150px;padding: 10px;"><img style="object-fit:cover;width:130px;height:130px;background:#aaa;" class="circle lozad" data-src="https://lh3.googleusercontent.com/r0oU_CDz9_2oKyrzsQtadEBDJD8Tw_dwDuDf3t5gLro-ky5tdQONk-L3mvdQF95GHgB8FBj3ERvolYJRIsltuw=s300"/></div>
+                
+
+            </div>
+            
+            <h1 class="website-title stylish-font">Find The Mochis</h1>
+            <h5 class="anton-subheading website-subtitle center-align">Mochi Game by Max</h5>
+            
+        </div>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 56 || document.documentElement.scrollTop > 56) {
+        document.getElementById("sub-nav").style.top = "-70px";
+      } else {
+        document.getElementById("sub-nav").style.top = "0px";
+      }
+    }
+
+</script>                    <div class="jumbo valign-wrapper" id="updates" style="min-height: none;  display: none;">
+    <div class="container center-align">
+        <div class="updates-container margin-bottom-0 row" id="updates-collection">
+                    </div>
+        <a href="https://baya.co/wegeta/updates" class="waves-effect theme-btn btn-large block-cta subtle-shadow" onclick="trackingViewAllClick(businessId, 'PAGE_HOME', view_all_type.VIEW_ALL_UPDATES, 'See All Updates')">See All Updates</a>
+
+    </div>
+</div>
+<script>
+        function renderUpdates(data) {
+        if (data.length > 0) {
+            document.getElementById("updates").style.display = "block";
+        }
+        console.log(data);
+        var updatesHtml = "";
+        const baseUrl = "findthemochis.de";
+        var slicedData = data.slice(0, 3);
+        slicedData.forEach(node => {
+            var imageHtml = '<div class="no-image-bg col s12"></div>';
+            if (node.image != null) {
+                imageHtml = `<div class="card-image col s12"><img class="image-thumb lozad updates-item-image" data-src="${node.image}?=s600" /></div>`;
+            }
+           updatesHtml += `<div class="updates-item-container col m4 s12"> <a class="card frameless-card waves-effect updates-card row" href=${baseUrl}/posts/${node.id}>` +
+            `${imageHtml}<div class="card-title col s12"><div class="updates-item-date font-small">${node.updatesDateReadable}</div>` +
+            `<div class="updates-item-content font-standard">${node.pureText}</div></div></a></div>`;
+        });
+        document.getElementById("updates-collection").innerHTML = updatesHtml;
+        console.log(updatesHtml);
+    }
+    window.addEventListener("load", function() {
+       ajax.get(`https://www.baya.co/updates/get?businessId=5679`, {}, function(data) { renderUpdates(data.data);if (observer != null){observer.observe();} });
+    });
+    </script>                    <div class="jumbo valign-wrapper" id="about" style="min-height: 0vh;padding-bottom:0px;">
+    <div class="container center-align row margin-top-20    ">
+        <h1 class="anton-heading stylish-font col m4 s12 margin-top-10"><mark>Find the Mochis!</mark></h1>
+
+        <ul class="collection row col m8 s12" id="about-container">
+                            Willkommen bei dem Mochi Game!<br><br>Schaffe es als erste/r Mochis zu finden!<br><br>Wenn ihr die Mochis gefunden habt, könnt ihr mir gerne ein Beweis Screenshot über Discord schicken! m.x#0001<br><br><a rel="nofollow" href="start.html">[Klicke hier um zu Starten!]</a>                    </ul>
+    </div>
+</div>
+                    <div class="jumbo valign-wrapper" id="whyus" style="min-height: 50vh; display: none;">
+    <div class="container center-align row">
+        <ul class="collection row col s12" id="whyus-collection">
+                    </ul>
+    </div>
+</div>
+<script>
+    function renderWhyUs(data) {
+        console.log(data);
+        if (data.length > 0) {
+            document.getElementById("whyus").style.display = "block";
+        }
+        var whyUsHtml = "";
+        data.forEach(whyUsItem => {
+                whyUsHtml += `<li class="collection-item avatar col s12 m12">` +
+                    `<div class="circle check-icon" style="background-color: var(--color-theme-solid-color);"></div>` +
+                    `<h5 class="title font-large bold-text`;
+                if (whyUsItem.subtitle != null) {
+                    whyUsHtml += " title-only";
+                }
+                whyUsHtml +=  `">${whyUsItem.title}</h5>`;
+                if (whyUsItem.subtitle != null) {
+                    whyUsHtml += `<p class="font-standard">${whyUsItem.subtitle}</p>`;
+                }
+                whyUsHtml += `</li>`;
+        });
+        document.getElementById("whyus-collection").innerHTML = whyUsHtml;
+        console.log(whyUsHtml);
+    }
+    window.addEventListener("load", function() {
+       ajax.get(`https://www.baya.co/whyus/get?businessId=${businessId}`, {}, function(data) { renderWhyUs(data); });
+    });
+
+    var businessIdStr = "5679";
+    var businessId = parseInt(businessIdStr);
+    var siemaInstance = null;
+    var galleryImageLoggedIndex = -1;
+
+    const observer = lozad();
+
+                    
+    function showToast(msg) {
+        M.toast({html: msg});
+    }
+
+    function imgError(img) {
+        img.src = img.src.replace(".webp", ".png");
+        return true;
+    }
+
+    
+    function trackContact(type, content) {trackingContactClick(businessId, page_type.PAGE_HOME, type, content);}
+
+    function contactCtaClick(copyText, toastText, contactType) {
+        copyText.select();
+        document.execCommand("copy");
+        showToast(toastText);
+        trackingContactClick(businessId, page_type.PAGE_HOME, contactType, copyText.innerHTML);
+    }
+
+    function ctaCopyClick() {
+        var copyText = document.getElementById("cta-input");
+        copyText.select();
+        document.execCommand("copy");
+        showToast('Copied!');
+        trackingCtaClick(businessId, page_type.PAGE_HOME, "", copyText.innerHTML);
+    }
+
+    window.addEventListener("load", function() {
+        observer.observe();
+                insertCss("");
+            });
+
+
+    document.getElementById("siemajs").onload = function(){
+        for (let func of siemaLoadedFunctions) {
+            func()
+        }
+    }
+
+
+
+</script><script>
+    window.addEventListener('popstate', function (event) {
+        console.log(event.state);
+        const productModal = document.getElementById("product-modal");
+        if (event.state!= null && event.state.type == "productDetails") {
+            const stateVar = event.state;
+            showProductModal(stateVar.product, stateVar.naturalWidth,stateVar.naturalHeight);
+            trackingProductClick(businessId, page_type.PAGE_PRODUCTS, stateVar.product.id, stateVar.product.name, stateVar.idx);
+        } else if (productModal != null && productModal.style.display != "none") {
+            productModal.style.display = "none";
+            document.body.style.overflow = "scroll";
+        }
+    });
+</script></html>
